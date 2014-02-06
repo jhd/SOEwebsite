@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="fav.png">-->
+
+    <title>Shiny Orb Express</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <link href="grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        function daysSince(year, month, day){
+            var then = new Date(year, month, day), // month is zero based
+            now  = new Date;               // no arguments -> current date
+
+            // 24 hours, 60 minutes, 60 seconds, 1000 milliseconds
+            document.write(""+  (Math.round((now - then) / (1000 * 60 * 60 * 24)) + " Days")); // round the amount of days
+            // result: 712
+        }
+        function heroList(player){
+            if(player=="flyingcomma"){
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/furion_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/items/hand_of_midas_lg.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/rattletrap_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/mirana_full.png\" height=\"20\">");
+            }
+            if(player=="light"){
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/enchantress_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/venomancer_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/jakiro_full.png\" height=\"20\">");
+            }
+            if(player=="kisu"){
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/queenofpain_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/storm_spirit_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/dragon_knight_full.png\" height=\"20\">");
+            }
+            if(player=="fiquem"){
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/crystal_maiden_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/spirit_breaker_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/ogre_magi_full.png\" height=\"20\">");
+            }           
+            if(player=="krox"){
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/life_stealer_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/gyrocopter_full.png\" height=\"20\">");
+                document.write("<img src=\"http://cdn.dota2.com/apps/dota2/images/heroes/juggernaut_full.png\" height=\"20\">");
+            }
+
+        }
+    </script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Shiny Orb Express</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="streams.html">Streams</a></li>
+            <li><a href="history.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="games.html">Matches</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="numbers.html">Stats</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3"><a href=http://dotabuff.com/players/91653181>Krox</a> <img src="img/irl.png" height="20" width="20"></div>
+            <div class="col-md-1">Carry</div>
+            <div class="col-md-2">1/1/2014 <script>daysSince(2014, 0, 1)</script> </div>
+            <div class="col-md-6">Heroes: <script>heroList("krox")</script></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"><a href= http://dotabuff.com/players/64713180>Kisu</a> <img src="img/irl.png" height="20" width="20"></div>
+            <div class="col-md-1">Mid</div>
+            <div class="col-md-2">1/1/2014 <script>daysSince(2014, 0, 1)</script> </div>
+            <div class="col-md-6">Heroes: <script>heroList("kisu")</script></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"><a href=http://dotabuff.com/players/46058492>Flyingcomma</a> <img src="img/irl.png" height="20" width="20"></div>
+            <div class="col-md-1">Offlane</div>
+            <div class="col-md-2">1/1/2014 <script>daysSince(2014, 0, 1)</script> </div>
+            <div class="col-md-6">Heroes: <script>heroList("flyingcomma")</script> </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"><a href=http://dotabuff.com/players/33631467>Light</a> <img src="img/irl.png" height="20" width="20"></div>
+            <div class="col-md-1">Support</div>
+            <div class="col-md-2">1/1/2014 <script>daysSince(2014, 0, 1)</script> </div>
+            <div class="col-md-6">Heroes: <script>heroList("light")</script></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"><a href=http://dotabuff.com/players/35086466>Fiquem</a> <img src="img/irl.png" height="20" width="20"></div>
+            <div class="col-md-1">Warder</div>
+            <div class="col-md-2">1/1/2014 <script>daysSince(2014, 0, 1)</script> </div>
+            <div class="col-md-6">Heroes:  <script>heroList("fiquem")</script></div>
+        </div>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
